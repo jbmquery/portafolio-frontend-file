@@ -15,7 +15,7 @@ function PortafolioPage() {
   useEffect(() => {
     const fetchProyecto = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/proyectos/${id}`);
+        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/proyectos/${id}`);
         if (!res.ok) throw new Error('Proyecto no encontrado');
         const data = await res.json();
         setProyecto(data);
