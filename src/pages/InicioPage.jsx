@@ -296,7 +296,7 @@ function InicioPage() {
             {/* Proyectos dinámicos */}
 <div className='flex flex-row flex-wrap justify-center gap-2 md:gap-5 py-10 px-3 mb-10'>
   {loading ? (
-    <p className="text-white">Cargando proyectos...</p>
+    <p className="text-white">Cargando proyectos... Servidor gratuito causa un poco de demora</p>
   ) : error ? (
     <p className="text-red-400">❌ {error}</p>
   ) : proyectos.length === 0 ? (
